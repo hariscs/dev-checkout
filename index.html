@@ -1,95 +1,137 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1,
+	<head>
+		<meta charset="utf-8" />
+		<meta
+			name="viewport"
+			content="width=device-width, initial-scale=1,
   maximum-scale=5"
-    />
+		/>
 
-    <link rel="icon" href="devchallenges.png" />
+		<link rel="icon" href="devchallenges.png" />
 
-    <link
-      rel="shortcut icon"
-      type="image/x-icon"
-      href="https://devchallenges.io/"
-    />
+		<link
+			rel="shortcut icon"
+			type="image/x-icon"
+			href="https://devchallenges.io/"
+		/>
 
-    <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap"
-      rel="stylesheet"
-    />
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap"
+			rel="stylesheet"
+		/>
 
-    <title>Devchallenges</title>
+		<title>Checkout page</title>
+		<link rel="stylesheet" href="css/style.css" />
+	</head>
+	<body>
+		<div class="container">
+			<header class="header">
+				<h1 class="main-title">Checkout</h1>
+			</header>
 
-    <style>
-      body {
-        font-family: "Poppins", sans-serif;
-      }
+			<main class="main">
+				<div class="main-cart">
+					<div class="cart-flex">
+						<img src="./images/photo1.png" alt="photo1" class="item-img" />
 
-      ul {
-        padding-left: 24px;
-      }
+						<div class="item-detail">
+							<h3 class="item-title">Vintage Backbag</h3>
+							<div class="price">
+								<p class="price-discount">$54.99</p>
+								<p class="price-original">$94.99</p>
+							</div>
 
-      li {
-        margin-bottom: 8px;
-      }
+							<div class="item-quantity"></div>
+						</div>
+					</div>
+					<div class="cart-flex">
+						<img src="./images/photo2.png" alt="photo2" class="item-img" />
 
-      .welcome {
-        max-width: 800px;
-        margin: 0 auto;
-      }
+						<div class="item-detail">
+							<h3 class="item-title">Levi Shoes</h3>
+							<div class="price">
+								<p class="price-discount">$74.99</p>
+								<p class="price-original">$124.99</p>
+							</div>
 
-      .welcome-text {
-        margin-top: 30vh;
-        font-weight: 500;
-      }
+							<div class="item-quantity"></div>
+						</div>
+					</div>
 
-      .welcome-text p {
-        font-size: 1rem;
-        font-weight: 400;
-      }
+					<div class="price-total">
+						<div class="shipping">
+							<h3 class="shipping-title">Shipping</h3>
+							<p class="shipping-price">$19</p>
+						</div>
 
-      .welcome-text h1 {
-        font-size: 1.5rem;
-      }
+						<div class="total-cost">
+							<h3 class="total-title">Total</h3>
+							<p class="total-price">$148.98</p>
+						</div>
+					</div>
+				</div>
 
-      .welcome-text a {
-        color: #f7542e;
-      }
-    </style>
-  </head>
-  <body>
-    <div class="welcome">
-      <div class="welcome-text">
-        <h1>
-          Welcome to
-          <a href="https://devchallenges.io/" target="_blank"
-            >devchallenges.io</a
-          >
-        </h1>
+				<div class="main-info">
+					<form class="form">
+						<h2 class="contact-title">Contact information</h2>
+						<div class="form-control">
+							<label for="email">Email</label>
+							<input
+								type="email"
+								id="email"
+								placeholder="Enter your email..."
+							/>
+						</div>
 
-        <p>
-          If you have any questions, don't hesitate to ask on Discord. Here are
-          7 general steps to complete the challenge:
-        </p>
-      </div>
+						<div class="form-control">
+							<label for="phone">Phone</label>
+							<input type="text" id="phone" placeholder="Enter your phone..." />
+						</div>
+					</form>
 
-      <ul>
-        <li><b>Step 1:</b> Create a new repository on github</li>
-        <li><b>Step 2:</b> Copy resources, README.md to your repository</li>
-        <li>
-          <b>Step 3:</b> Login to Figma to checkout font, color, spacing,..
-        </li>
-        <li><b>Step 4:</b> Complete all user stories</li>
-        <li><b>Step 5:</b> Update README.md</li>
-        <li><b>Step 6:</b> Deploy your app and submit your solution</li>
-        <li>
-          <b>Step 7:</b> Share your solution on Discord, Twitter and other
-          platforms to ask for feedback
-        </li>
-      </ul>
-    </div>
-  </body>
+					<form class="form">
+						<h2 class="shipping-title">Shipping address</h2>
+
+						<div class="form-control">
+							<label for="name">Full name</label>
+							<input type="text" id="name" placeholder="Rodney Cotton" />
+						</div>
+
+						<div class="form-control">
+							<label for="address">Address</label>
+							<input type="text" id="address" placeholder="Your address.." />
+						</div>
+
+						<div class="form-control">
+							<label for="city">City</label>
+							<input type="text" id="city" placeholder="Your city.." />
+						</div>
+						<div class="form-control">
+							<label for="country">Country</label>
+							<select id="country">
+								<option value="volvo" selected disabled>Your country..</option>
+								<option value="USA">USA</option>
+								<option value="UK">UK</option>
+								<option value="Australia">Australia</option>
+							</select>
+						</div>
+						<div class="form-control">
+							<label for="">Postal code</label>
+							<input type="text" placeholder="Your postal code.." />
+						</div>
+
+						<div class="form-control">
+							<input type="checkbox" id="save-info" />
+							<label for="save-info">Save this information for next time</label>
+						</div>
+
+						<button class="btn">Continue</button>
+					</form>
+				</div>
+			</main>
+		</div>
+	</body>
 </html>

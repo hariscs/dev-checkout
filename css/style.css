@@ -1,0 +1,31 @@
+:root {
+	--clr-white: #ffffff;
+
+	--clr-gray1: #333333;
+	--clr-gray2: #4e5150;
+	--clr-gray3: #;
+	--clr-gray4: #333333;
+
+	--clr-orange: #f2994a;
+}
+
+* {
+	box-sizing: border-box;
+}
+
+body {
+	font-family: 'Montserrat', sans-serif;
+	margin: 0;
+}
+
+img {
+	max-width: 100%;
+	display: block;
+}
+
+.container {
+	width: 90%;
+	max-width: 375px;
+	margin: 0 auto;
+	padding: 2em 0;
+}
