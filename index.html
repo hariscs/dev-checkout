@@ -22,6 +22,13 @@
 			href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap"
 			rel="stylesheet"
 		/>
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+			integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+			crossorigin="anonymous"
+			referrerpolicy="no-referrer"
+		/>
 
 		<title>Checkout page</title>
 		<link rel="stylesheet" href="css/style.css" />
@@ -44,9 +51,14 @@
 								<p class="price-original">$94.99</p>
 							</div>
 
-							<div class="item-quantity"></div>
+							<div class="item-quantity">
+								<div class="plus">-</div>
+								<div class="number">1</div>
+								<div class="minus">+</div>
+							</div>
 						</div>
 					</div>
+
 					<div class="cart-flex">
 						<img src="./images/photo2.png" alt="photo2" class="item-img" />
 
@@ -57,7 +69,11 @@
 								<p class="price-original">$124.99</p>
 							</div>
 
-							<div class="item-quantity"></div>
+							<div class="item-quantity">
+								<div class="plus">-</div>
+								<div class="number">1</div>
+								<div class="minus">+</div>
+							</div>
 						</div>
 					</div>
 
@@ -78,17 +94,19 @@
 					<form class="form">
 						<h2 class="contact-title">Contact information</h2>
 						<div class="form-control">
-							<label for="email">Email</label>
+							<label for="email">E-mail</label>
 							<input
 								type="email"
 								id="email"
 								placeholder="Enter your email..."
 							/>
+							<i class="fas fa-envelope"></i>
 						</div>
 
 						<div class="form-control">
 							<label for="phone">Phone</label>
 							<input type="text" id="phone" placeholder="Enter your phone..." />
+							<i class="fas fa-phone-alt"></i>
 						</div>
 					</form>
 
@@ -98,32 +116,40 @@
 						<div class="form-control">
 							<label for="name">Full name</label>
 							<input type="text" id="name" placeholder="Rodney Cotton" />
+							<i class="fas fa-user-circle"></i>
 						</div>
 
 						<div class="form-control">
 							<label for="address">Address</label>
 							<input type="text" id="address" placeholder="Your address.." />
+							<i class="fas fa-home"></i>
 						</div>
 
 						<div class="form-control">
 							<label for="city">City</label>
 							<input type="text" id="city" placeholder="Your city.." />
-						</div>
-						<div class="form-control">
-							<label for="country">Country</label>
-							<select id="country">
-								<option value="volvo" selected disabled>Your country..</option>
-								<option value="USA">USA</option>
-								<option value="UK">UK</option>
-								<option value="Australia">Australia</option>
-							</select>
-						</div>
-						<div class="form-control">
-							<label for="">Postal code</label>
-							<input type="text" placeholder="Your postal code.." />
+							<i class="fas fa-city"></i>
 						</div>
 
-						<div class="form-control">
+						<div class="mid-flex">
+							<div class="form-control">
+								<label for="country">Country</label>
+								<select id="country">
+									<option value="none" selected disabled>Your country..</option>
+									<option value="USA">USA</option>
+									<option value="UK">UK</option>
+									<option value="Australia">Australia</option>
+								</select>
+								<i class="fas fa-city"></i>
+							</div>
+							<div class="form-control code">
+								<label for="">Postal code</label>
+								<input type="text" placeholder="Your postal code.." />
+								<i class="far fa-envelope"></i>
+							</div>
+						</div>
+
+						<div class="form-control save-flex">
 							<input type="checkbox" id="save-info" />
 							<label for="save-info">Save this information for next time</label>
 						</div>
@@ -134,7 +160,10 @@
 			</main>
 		</div>
 		<footer>
-			<p>created by Haris - devChallenges.io</p>
+			<p>
+				created by <a href="https://twitter.com/_haris_shah">Haris</a> -
+				<a href="https://devchallenges.io/">devChallenges.io</a>
+			</p>
 		</footer>
 	</body>
 </html>
